@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="11508"/>
+    </dependencies>
+    <scenes>
+        <!--music-->
+        <scene sceneID="EKZ-wI-jRT">
+            <objects>
+                <controller identifier="music" id="RDD-ii-InN" customClass="MusicInterfaceController" customModule="vesta_WatchKit_Extension">
+                    <items>
+                        <button width="30" height="30" alignment="center" backgroundImage="like" id="Jkq-FW-Bly"/>
+                        <group width="134" height="80" alignment="left" verticalAlignment="center" id="ez6-Ai-TY6">
+                            <items>
+                                <button width="15" height="30" alignment="left" verticalAlignment="center" backgroundImage="left-arrow" id="BbL-c4-pMA">
+                                    <connections>
+                                        <action selector="switchSong" destination="RDD-ii-InN" id="tui-n1-Sl7"/>
+                                    </connections>
+                                </button>
+                                <button width="70" height="70" alignment="center" verticalAlignment="center" backgroundImage="play" id="X0f-JA-Q4z">
+                                    <connections>
+                                        <action selector="play" destination="RDD-ii-InN" id="9ig-B3-HVS"/>
+                                    </connections>
+                                </button>
+                                <button width="15" height="30" alignment="right" verticalAlignment="center" backgroundImage="right-arrow" id="cUe-3T-kF0">
+                                    <connections>
+                                        <action selector="switchSong" destination="RDD-ii-InN" id="hyn-1G-FsM"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="30" height="30" alignment="center" verticalAlignment="bottom" backgroundImage="dislike" id="a5i-xy-aUm"/>
+                        <label alignment="center" verticalAlignment="bottom" text="song" textAlignment="center" numberOfLines="2" id="wJG-Ks-dZE" userLabel="song">
+                            <fontDescription key="font" type="boldSystem" pointSize="15"/>
+                        </label>
+                        <label alignment="center" verticalAlignment="bottom" text="artist" textAlignment="center" numberOfLines="2" id="a5H-GJ-Sq9">
+                            <fontDescription key="font" type="system" weight="thin" pointSize="12"/>
+                        </label>
+                    </items>
+                    <connections>
+                        <outlet property="artist" destination="a5H-GJ-Sq9" id="8M4-fA-GfP"/>
+                        <outlet property="playButton" destination="X0f-JA-Q4z" id="T05-Qy-qIX"/>
+                        <outlet property="songInfo" destination="wJG-Ks-dZE" id="PXg-hl-0OD"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="228" y="0.0"/>
+        </scene>
+        <!--alarmNotification-->
+        <scene sceneID="Wad-5e-TBe">
+            <objects>
+                <controller identifier="alarmNotification" id="CHG-SC-6EJ" customClass="AlarmNotificationInterfaceController" customModule="vesta_WatchKit_Extension">
+                    <items>
+                        <button width="60" height="60" alignment="center" backgroundImage="music" id="6ts-mO-1Zm">
+                            <connections>
+                                <segue destination="RDD-ii-InN" kind="push" id="KmW-hc-qaz"/>
+                            </connections>
+                        </button>
+                        <group width="1" height="0.0" alignment="left" layout="vertical" radius="5" id="zzr-Nj-qvx">
+                            <items>
+                                <label height="20" alignment="left" text="Event: Date" textAlignment="left" id="QWe-gD-dbe">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="left" text="Date:  12/10/2016" id="ybp-Ye-42y">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="left" text="Time:  11:00AM" id="Lai-LI-0AN">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                                <label alignment="left" text="Mood: In Love" id="nH8-rx-RNJ">
+                                    <fontDescription key="font" type="system" pointSize="14"/>
+                                </label>
+                            </items>
+                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        </group>
+                        <group width="1" alignment="left" id="3OH-ch-p95">
+                            <items>
+                                <button width="50" height="50" alignment="left" verticalAlignment="bottom" title="Snooze" backgroundImage="bluecircle" id="g9f-en-xLK">
+                                    <fontDescription key="font" type="boldSystem" pointSize="9"/>
+                                    <connections>
+                                        <action selector="alarmSet" destination="CHG-SC-6EJ" id="roO-w8-wvR"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="right" verticalAlignment="bottom" title="Dismiss" backgroundImage="redcircle" id="64r-Wb-95I">
+                                    <fontDescription key="font" type="boldSystem" pointSize="9"/>
+                                    <connections>
+                                        <action selector="alarmCancel" destination="CHG-SC-6EJ" id="ULt-I2-PiW"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="496" y="-0.5"/>
+        </scene>
+        <!--home-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller identifier="home" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="vesta_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="voice" id="vOY-Ey-UaP">
+                            <connections>
+                                <segue destination="Tne-G9-MUk" kind="push" id="QkW-l2-ClF"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Alarm" id="dIZ-ap-FL0">
+                            <connections>
+                                <segue destination="qHQ-wf-HT1" kind="push" id="Ruh-e0-rtM"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Timer" id="BBA-ST-9UQ"/>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Music" id="YDe-mP-ulD">
+                            <connections>
+                                <segue destination="RDD-ii-InN" kind="push" id="kS4-ZH-Y6q"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="EOU-9I-wT8" userLabel="menu">
+                        <items>
+                            <menuItem title="Help" icon="maybe" id="7qb-KR-Uo8">
+                                <connections>
+                                    <action selector="info" destination="AgC-eL-Hgc" id="ktG-Az-IL8"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="220" y="345"/>
+        </scene>
+        <!--info-->
+        <scene sceneID="qDs-DF-KFX">
+            <objects>
+                <controller identifier="info" id="ANy-ki-7U4">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Speak to VESTA to set alarm, timer, or play mood-based music." numberOfLines="4" id="c8j-Ye-8BJ"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-80" y="0.0"/>
+        </scene>
+        <!--listen-->
+        <scene sceneID="odq-fA-xAG">
+            <objects>
+                <controller identifier="listen" id="Tne-G9-MUk">
+                    <items>
+                        <button width="1" alignment="left" verticalAlignment="center" backgroundImage="listen" id="zJW-cp-MH5">
+                            <connections>
+                                <segue destination="hv3-os-zj3" kind="push" id="yp3-Aw-5Sl"/>
+                            </connections>
+                        </button>
+                        <label alignment="center" verticalAlignment="center" text="VESTA Listening" id="DFe-mE-AZq">
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="font" type="system" pointSize="13"/>
+                        </label>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="513" y="346"/>
+        </scene>
+        <!--alarm-->
+        <scene sceneID="0Yu-DQ-zzS">
+            <objects>
+                <controller identifier="alarm" id="hv3-os-zj3" customClass="AlarmInterfaceController" customModule="vesta_WatchKit_Extension">
+                    <items>
+                        <label alignment="left" text="Date:" id="ztl-Qa-KIU"/>
+                        <button width="1" alignment="left" title="12/10/2016" id="P0K-CU-Xud">
+                            <connections>
+                                <action selector="alarmEdit" destination="hv3-os-zj3" id="gPN-k8-feY"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Time:" id="njc-A8-T4g"/>
+                        <button width="1" alignment="left" title="11:00AM" id="OwN-ag-oUK">
+                            <connections>
+                                <action selector="alarmEdit" destination="hv3-os-zj3" id="cpx-ht-XFX"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Event:" id="6Cm-ee-f5Q"/>
+                        <button width="1" alignment="left" title="Date" id="Rxk-Jm-klR">
+                            <connections>
+                                <action selector="alarmEdit" destination="hv3-os-zj3" id="ext-sB-MhJ"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Mood:" id="KH8-DR-aRS"/>
+                        <button width="1" alignment="left" title="In Love" id="Qjg-lg-iLS">
+                            <connections>
+                                <action selector="alarmEdit" destination="hv3-os-zj3" id="9o8-xK-Cc5"/>
+                            </connections>
+                        </button>
+                        <group width="136" height="50" alignment="center" verticalAlignment="bottom" id="9j9-Xr-uiX">
+                            <items>
+                                <button width="50" height="50" alignment="left" backgroundImage="check" id="zf4-5z-umU">
+                                    <connections>
+                                        <action selector="alarmSet" destination="hv3-os-zj3" id="8hS-Hk-1go"/>
+                                    </connections>
+                                </button>
+                                <button width="50" height="50" alignment="right" verticalAlignment="bottom" backgroundImage="cross" id="Z66-qW-YRD">
+                                    <connections>
+                                        <action selector="alarmCancel" destination="hv3-os-zj3" id="iG8-XA-LTC"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="812" y="344.5"/>
+        </scene>
+        <!--calendar-->
+        <scene sceneID="XYH-3n-idm">
+            <objects>
+                <controller identifier="calendar" id="qHQ-wf-HT1">
+                    <items>
+                        <button width="35" height="35" alignment="right" backgroundImage="plus" id="dJo-av-f32">
+                            <connections>
+                                <segue destination="hv3-os-zj3" kind="push" id="Dx5-w5-Ru9"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" backgroundImage="calendar" id="Ogg-tb-Xos">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                            <connections>
+                                <segue destination="hv3-os-zj3" kind="push" id="fev-bJ-YqX"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="285" y="676"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="207" y="997"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="vesta_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="463" y="997"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fev-bJ-YqX"/>
+        <segue reference="KmW-hc-qaz"/>
+    </inferredMetricsTieBreakers>
+</document>
