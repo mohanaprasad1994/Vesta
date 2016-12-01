@@ -12,6 +12,7 @@ Due to limitations of watchOS:
 TODO:
 - (maybe) Add newly added schedule to "alarm" page
 - Setting button on main page, which includes help and import
+- Add music playlist (non-customizable) element to music player screen
 
 
 
