@@ -7,7 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		BD0BE4981DE50B0E000EB0A5 /* Alert Background.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0BE4971DE50B0E000EB0A5 /* Alert Background.png */; };
+		BD0479E51DF0FF0400B743BD /* red-rec.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479E41DF0FF0400B743BD /* red-rec.png */; };
+		BD0479E71DF0FF0900B743BD /* water.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479E61DF0FF0900B743BD /* water.png */; };
+		BD0479E91DF0FF0F00B743BD /* apple-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479E81DF0FF0F00B743BD /* apple-logo.png */; };
+		BD0479EB1DF0FF1300B743BD /* spotify-logo.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479EA1DF0FF1300B743BD /* spotify-logo.png */; };
+		BD0479ED1DF0FF1900B743BD /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479EC1DF0FF1900B743BD /* settings.png */; };
+		BD0479EF1DF0FF2000B743BD /* green-rec.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479EE1DF0FF2000B743BD /* green-rec.png */; };
+		BD0479F11DF0FFB600B743BD /* happy.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479F01DF0FFB600B743BD /* happy.png */; };
+		BD0479F51DF1046B00B743BD /* smalllogo.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479F41DF1046B00B743BD /* smalllogo.png */; };
+		BD0479F71DF1065200B743BD /* electricity.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0479F61DF1065200B743BD /* electricity.png */; };
 		BD0BE49A1DE50B54000EB0A5 /* music.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0BE4991DE50B54000EB0A5 /* music.png */; };
 		BD0BE49C1DE50F77000EB0A5 /* redcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0BE49B1DE50F77000EB0A5 /* redcircle.png */; };
 		BD0BE49E1DE50F7D000EB0A5 /* bluecircle.png in Resources */ = {isa = PBXBuildFile; fileRef = BD0BE49D1DE50F7D000EB0A5 /* bluecircle.png */; };
@@ -41,7 +49,6 @@
 		BD3910F71DE2B8A10066F7B4 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3910F61DE2B8A10066F7B4 /* cross.png */; };
 		BDAEF8361DE37F3600357834 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BDAEF8351DE37F3600357834 /* pause.png */; };
 		BDAEF83A1DE3B69500357834 /* AlarmInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */; };
-		BDAEF83C1DE3CBE400357834 /* alarm.png in Resources */ = {isa = PBXBuildFile; fileRef = BDAEF83B1DE3CBE400357834 /* alarm.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,8 +94,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BD0479E41DF0FF0400B743BD /* red-rec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "red-rec.png"; path = "Assets.xcassets/red-rec.png"; sourceTree = "<group>"; };
+		BD0479E61DF0FF0900B743BD /* water.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = water.png; path = Assets.xcassets/water.png; sourceTree = "<group>"; };
+		BD0479E81DF0FF0F00B743BD /* apple-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "apple-logo.png"; path = "Assets.xcassets/apple-logo.png"; sourceTree = "<group>"; };
+		BD0479EA1DF0FF1300B743BD /* spotify-logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spotify-logo.png"; path = "Assets.xcassets/spotify-logo.png"; sourceTree = "<group>"; };
+		BD0479EC1DF0FF1900B743BD /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = settings.png; path = Assets.xcassets/settings.png; sourceTree = "<group>"; };
+		BD0479EE1DF0FF2000B743BD /* green-rec.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "green-rec.png"; path = "Assets.xcassets/green-rec.png"; sourceTree = "<group>"; };
+		BD0479F01DF0FFB600B743BD /* happy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = happy.png; path = Assets.xcassets/happy.png; sourceTree = "<group>"; };
+		BD0479F41DF1046B00B743BD /* smalllogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smalllogo.png; path = Assets.xcassets/smalllogo.png; sourceTree = "<group>"; };
+		BD0479F61DF1065200B743BD /* electricity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricity.png; path = "../../../../Desktop/vesta/vesta WatchKit App/Assets.xcassets/electricity.png"; sourceTree = "<group>"; };
 		BD0BE4961DE3F3AE000EB0A5 /* vesta WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "vesta WatchKit Extension.entitlements"; sourceTree = "<group>"; };
-		BD0BE4971DE50B0E000EB0A5 /* Alert Background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Alert Background.png"; path = "Assets.xcassets/Alert Background.png"; sourceTree = "<group>"; };
 		BD0BE4991DE50B54000EB0A5 /* music.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = music.png; path = Assets.xcassets/music.png; sourceTree = "<group>"; };
 		BD0BE49B1DE50F77000EB0A5 /* redcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = redcircle.png; path = Assets.xcassets/redcircle.png; sourceTree = "<group>"; };
 		BD0BE49D1DE50F7D000EB0A5 /* bluecircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bluecircle.png; path = Assets.xcassets/bluecircle.png; sourceTree = "<group>"; };
@@ -128,7 +143,6 @@
 		BD3910F61DE2B8A10066F7B4 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = Assets.xcassets/cross.png; sourceTree = "<group>"; };
 		BDAEF8351DE37F3600357834 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Assets.xcassets/pause.png; sourceTree = "<group>"; };
 		BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInterfaceController.swift; sourceTree = "<group>"; };
-		BDAEF83B1DE3CBE400357834 /* alarm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = alarm.png; path = Assets.xcassets/alarm.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,15 +251,22 @@
 				BD0BE4991DE50B54000EB0A5 /* music.png */,
 				BD3910F41DE2B8990066F7B4 /* check.png */,
 				BD3910F11DE2B26E0066F7B4 /* listen.png */,
-				BDAEF83B1DE3CBE400357834 /* alarm.png */,
+				BD0479F41DF1046B00B743BD /* smalllogo.png */,
+				BD0479F01DF0FFB600B743BD /* happy.png */,
 				BD0BE49B1DE50F77000EB0A5 /* redcircle.png */,
+				BD0479EA1DF0FF1300B743BD /* spotify-logo.png */,
 				BD0BE49D1DE50F7D000EB0A5 /* bluecircle.png */,
-				BD0BE4971DE50B0E000EB0A5 /* Alert Background.png */,
+				BD0479E81DF0FF0F00B743BD /* apple-logo.png */,
+				BD0479EE1DF0FF2000B743BD /* green-rec.png */,
 				BD0BE4A11DE52911000EB0A5 /* dislike.png */,
+				BD0479F61DF1065200B743BD /* electricity.png */,
 				BD0BE4B51DE55202000EB0A5 /* plus.png */,
+				BD0479E61DF0FF0900B743BD /* water.png */,
 				BD0BE4A21DE52911000EB0A5 /* left-arrow.png */,
+				BD0479EC1DF0FF1900B743BD /* settings.png */,
 				BD0BE4A31DE52911000EB0A5 /* like.png */,
 				BD0BE4A41DE52911000EB0A5 /* right-arrow.png */,
+				BD0479E41DF0FF0400B743BD /* red-rec.png */,
 				BD0BE49F1DE5227A000EB0A5 /* calendar.png */,
 				BD1EA8561DE2DF8B0030D8A5 /* play.png */,
 				BD3910EF1DE2ADB30066F7B4 /* voice.png */,
@@ -376,23 +397,30 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD0479F51DF1046B00B743BD /* smalllogo.png in Resources */,
 				BD0BE49E1DE50F7D000EB0A5 /* bluecircle.png in Resources */,
 				BD1EA8571DE2DF8B0030D8A5 /* play.png in Resources */,
+				BD0479E51DF0FF0400B743BD /* red-rec.png in Resources */,
 				BD3910F71DE2B8A10066F7B4 /* cross.png in Resources */,
-				BDAEF83C1DE3CBE400357834 /* alarm.png in Resources */,
 				BD0BE4A61DE52911000EB0A5 /* left-arrow.png in Resources */,
 				BDAEF8361DE37F3600357834 /* pause.png in Resources */,
 				BD3910F21DE2B26E0066F7B4 /* listen.png in Resources */,
 				BD0BE4A71DE52911000EB0A5 /* like.png in Resources */,
 				BD0BE49A1DE50B54000EB0A5 /* music.png in Resources */,
 				BD0BE4A01DE5227A000EB0A5 /* calendar.png in Resources */,
-				BD0BE4981DE50B0E000EB0A5 /* Alert Background.png in Resources */,
 				BD3910F51DE2B8990066F7B4 /* check.png in Resources */,
 				BD0BE4B61DE55202000EB0A5 /* plus.png in Resources */,
 				BD3910F01DE2ADB30066F7B4 /* voice.png in Resources */,
+				BD0479E71DF0FF0900B743BD /* water.png in Resources */,
+				BD0479F11DF0FFB600B743BD /* happy.png in Resources */,
+				BD0479EF1DF0FF2000B743BD /* green-rec.png in Resources */,
+				BD0479ED1DF0FF1900B743BD /* settings.png in Resources */,
 				BD0BE49C1DE50F77000EB0A5 /* redcircle.png in Resources */,
+				BD0479F71DF1065200B743BD /* electricity.png in Resources */,
 				BD0BE4A81DE52911000EB0A5 /* right-arrow.png in Resources */,
 				BD0BE4A51DE52911000EB0A5 /* dislike.png in Resources */,
+				BD0479EB1DF0FF1300B743BD /* spotify-logo.png in Resources */,
+				BD0479E91DF0FF0F00B743BD /* apple-logo.png in Resources */,
 				BD3910CC1DE298010066F7B4 /* Assets.xcassets in Resources */,
 				BD3910CA1DE298010066F7B4 /* Interface.storyboard in Resources */,
 			);
