@@ -12,8 +12,13 @@ import Foundation
 
 class AlarmInterfaceController: WKInterfaceController {
 
+    @IBOutlet var timeField: WKInterfaceButton!
+    @IBOutlet var eventField: WKInterfaceButton!
+    @IBOutlet var moodField: WKInterfaceButton!
+    
     @IBAction func alarmSet() {
         alarm = true
+        curAlarm = Alarm(time:time, event:event, mood:mood)
         //presentController(withName: "home", context: nil)
         WKInterfaceController.reloadRootControllers(withNames: ["home"], contexts: nil)
     }
@@ -28,6 +33,11 @@ class AlarmInterfaceController: WKInterfaceController {
     }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
+        
+        timeField.setTitle(time)
+        eventField.setTitle(event)
+        moodField.setTitle(mood)
+        
         // Configure interface objects here.
     }
 

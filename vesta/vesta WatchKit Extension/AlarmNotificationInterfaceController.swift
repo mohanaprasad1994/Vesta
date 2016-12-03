@@ -11,7 +11,9 @@ import Foundation
 
 
 class AlarmNotificationInterfaceController: WKInterfaceController {
-
+    @IBOutlet var eventField: WKInterfaceLabel!
+    @IBOutlet var timeField: WKInterfaceLabel!
+    @IBOutlet var moodField: WKInterfaceLabel!
     
     @IBAction func alarmSet() {
         alarm = true
@@ -34,8 +36,16 @@ class AlarmNotificationInterfaceController: WKInterfaceController {
         else{
             player2.play()
         }
-        
         playing = true
+        
+        var eventNotif = " Event: " + event
+        var timeNotif = " Time:  " + time
+        var moodNotif = " Mood: " + mood
+        timeField.setText(timeNotif)
+        eventField.setText(eventNotif)
+        moodField.setText(moodNotif)
+        
+        
         // Configure interface objects here.
     }
 

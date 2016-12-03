@@ -66,9 +66,6 @@
                                 <label height="20" alignment="left" text="Event: Date" textAlignment="left" id="QWe-gD-dbe">
                                     <fontDescription key="font" type="system" pointSize="14"/>
                                 </label>
-                                <label alignment="left" text="Date:  12/10/2016" id="ybp-Ye-42y">
-                                    <fontDescription key="font" type="system" pointSize="14"/>
-                                </label>
                                 <label alignment="left" text="Time:  11:00AM" id="Lai-LI-0AN">
                                     <fontDescription key="font" type="system" pointSize="14"/>
                                 </label>
@@ -95,6 +92,11 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="eventField" destination="QWe-gD-dbe" id="YcV-0g-3Nl"/>
+                        <outlet property="moodField" destination="nH8-rx-RNJ" id="OJt-hK-9lU"/>
+                        <outlet property="timeField" destination="Lai-LI-0AN" id="MpX-tF-vaI"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="496" y="-0.5"/>
@@ -106,7 +108,7 @@
                     <items>
                         <button width="100" height="100" alignment="center" verticalAlignment="center" backgroundImage="voice" id="vOY-Ey-UaP">
                             <connections>
-                                <segue destination="Tne-G9-MUk" kind="push" id="QkW-l2-ClF"/>
+                                <action selector="speechRecog" destination="AgC-eL-Hgc" id="xLU-qV-JWo"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Alarm" id="dIZ-ap-FL0">
@@ -169,12 +171,6 @@
             <objects>
                 <controller identifier="alarm" id="hv3-os-zj3" customClass="AlarmInterfaceController" customModule="vesta_WatchKit_Extension">
                     <items>
-                        <label alignment="left" text="Date:" id="ztl-Qa-KIU"/>
-                        <button width="1" alignment="left" title="12/10/2016" id="P0K-CU-Xud">
-                            <connections>
-                                <action selector="alarmEdit" destination="hv3-os-zj3" id="gPN-k8-feY"/>
-                            </connections>
-                        </button>
                         <label alignment="left" text="Time:" id="njc-A8-T4g"/>
                         <button width="1" alignment="left" title="11:00AM" id="OwN-ag-oUK">
                             <connections>
@@ -208,6 +204,11 @@
                             </items>
                         </group>
                     </items>
+                    <connections>
+                        <outlet property="eventField" destination="Rxk-Jm-klR" id="4WI-8L-KEb"/>
+                        <outlet property="moodField" destination="Qjg-lg-iLS" id="M6G-qw-iPq"/>
+                        <outlet property="timeField" destination="OwN-ag-oUK" id="2ox-ND-B4c"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="812" y="344.5"/>
@@ -215,20 +216,23 @@
         <!--calendar-->
         <scene sceneID="XYH-3n-idm">
             <objects>
-                <controller identifier="calendar" id="qHQ-wf-HT1">
+                <controller identifier="calendar" id="qHQ-wf-HT1" customClass="CalendarInterfaceController" customModule="vesta_WatchKit_Extension">
                     <items>
                         <button width="35" height="35" alignment="right" backgroundImage="plus" id="dJo-av-f32">
                             <connections>
                                 <segue destination="hv3-os-zj3" kind="push" id="Dx5-w5-Ru9"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" backgroundImage="calendar" id="Ogg-tb-Xos">
+                        <button width="1" alignment="left" title="Date @10:00AM" backgroundImage="calendar" id="Ogg-tb-Xos">
                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="hv3-os-zj3" kind="push" id="fev-bJ-YqX"/>
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="calendarField" destination="Ogg-tb-Xos" id="8gg-p5-gyS"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="285" y="676"/>
@@ -258,7 +262,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="fev-bJ-YqX"/>
         <segue reference="KmW-hc-qaz"/>
+        <segue reference="fev-bJ-YqX"/>
     </inferredMetricsTieBreakers>
 </document>

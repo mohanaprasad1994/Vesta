@@ -12,9 +12,64 @@ import Foundation
 
 var alarm = false
 var intervalTimer = Timer()
+var time = "10:00AM"
+var event = "Wake Up"
+var mood = "Happy"
+
+struct Alarm{
+    var time = ""
+    var event = ""
+    var mood = ""
+}
+
+var curAlarm = Alarm(time:time, event:event, mood:mood)
 
 class InterfaceController: WKInterfaceController {
 
+    @IBAction func speechRecog() {
+        self.presentTextInputController(withSuggestions: [], allowedInputMode: WKTextInputMode.plain, completion:{
+            (results) -> Void in
+            let aResult = results?[0] as? String
+            if(!(aResult == nil)){
+                print(aResult)
+                print("SHORT ASR COMPLETED")
+                
+                self.parseSpeech(str: aResult!)
+                
+                WKInterfaceController.reloadRootControllers(withNames: ["alarm"], contexts: nil)
+                //DispatchQueue.main.asynchronously() {
+                // Update UI
+                //}
+            }//end if
+        })//end show voice menu
+        
+        
+    }
+    
+    func parseSpeech(str:String){
+        let strArr = str.characters.split{$0 == " "}.map(String.init)
+        for (idx, elem) in strArr.enumerated() {
+            if elem == "PM" || elem == "AM"{
+                time = strArr[idx-1]
+                if !(time.range(of: ":") != nil){
+                    time += ":00"
+                }
+                time += elem
+                print(time)
+            }
+            if elem.lowercased() == "date" {
+                event = "Date"
+                mood = "In Love"
+            }
+            if elem.lowercased() == "wake" {
+                event = "Wake Up"
+                mood = "Happy"
+            }
+            
+        }
+        
+    }
+    
     @IBAction func info() {
         presentController(withName: "info", context: nil)
         
