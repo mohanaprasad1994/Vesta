@@ -24,7 +24,23 @@ class AlarmInterfaceController: WKInterfaceController {
     }
     
     @IBAction func alarmEdit() {
-        WKInterfaceController.reloadRootControllers(withNames: ["listen"], contexts: nil)
+        //WKInterfaceController.reloadRootControllers(withNames: ["listen"], contexts: nil)
+        self.presentTextInputController(withSuggestions: [], allowedInputMode: WKTextInputMode.plain, completion:{
+            (results) -> Void in
+            let aResult = results?[0] as? String
+            if(!(aResult == nil)){
+                
+                InterfaceController.parseSpeech(str: aResult!)
+                self.timeField.setTitle(time)
+                self.eventField.setTitle(event)
+                self.moodField.setTitle(mood)
+                
+                //DispatchQueue.main.asynchronously() {
+                // Update UI
+                //}
+            }//end if
+        })//end show voice menu
+
     }
     
     @IBAction func alarmCancel() {
