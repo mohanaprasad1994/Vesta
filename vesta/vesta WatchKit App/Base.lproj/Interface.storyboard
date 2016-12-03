@@ -147,25 +147,6 @@
             </objects>
             <point key="canvasLocation" x="-80" y="0.0"/>
         </scene>
-        <!--listen-->
-        <scene sceneID="odq-fA-xAG">
-            <objects>
-                <controller identifier="listen" id="Tne-G9-MUk">
-                    <items>
-                        <button width="1" alignment="left" verticalAlignment="center" backgroundImage="listen" id="zJW-cp-MH5">
-                            <connections>
-                                <segue destination="hv3-os-zj3" kind="push" id="yp3-Aw-5Sl"/>
-                            </connections>
-                        </button>
-                        <label alignment="center" verticalAlignment="center" text="VESTA Listening" id="DFe-mE-AZq">
-                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            <fontDescription key="font" type="system" pointSize="13"/>
-                        </label>
-                    </items>
-                </controller>
-            </objects>
-            <point key="canvasLocation" x="513" y="346"/>
-        </scene>
         <!--alarm-->
         <scene sceneID="0Yu-DQ-zzS">
             <objects>
@@ -211,7 +192,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="812" y="344.5"/>
+            <point key="canvasLocation" x="614" y="439"/>
         </scene>
         <!--calendar-->
         <scene sceneID="XYH-3n-idm">
@@ -220,7 +201,7 @@
                     <items>
                         <button width="35" height="35" alignment="right" backgroundImage="plus" id="dJo-av-f32">
                             <connections>
-                                <segue destination="hv3-os-zj3" kind="push" id="Dx5-w5-Ru9"/>
+                                <action selector="addAlarm" destination="qHQ-wf-HT1" id="ZRd-M9-8N5"/>
                             </connections>
                         </button>
                         <button width="1" alignment="left" title="Date @10:00AM" backgroundImage="calendar" id="Ogg-tb-Xos">
@@ -263,6 +244,5 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="KmW-hc-qaz"/>
-        <segue reference="fev-bJ-YqX"/>
     </inferredMetricsTieBreakers>
 </document>

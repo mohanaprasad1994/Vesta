@@ -30,7 +30,7 @@ class AlarmInterfaceController: WKInterfaceController {
             let aResult = results?[0] as? String
             if(!(aResult == nil)){
                 
-                InterfaceController.parseSpeech(str: aResult!)
+                InterfaceController.parseSpeechAlarm(str: aResult!)
                 self.timeField.setTitle(time)
                 self.eventField.setTitle(event)
                 self.moodField.setTitle(mood)

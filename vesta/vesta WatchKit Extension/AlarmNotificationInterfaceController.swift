@@ -38,9 +38,9 @@ class AlarmNotificationInterfaceController: WKInterfaceController {
         }
         playing = true
         
-        var eventNotif = " Event: " + event
-        var timeNotif = " Time:  " + time
-        var moodNotif = " Mood: " + mood
+        let eventNotif = " Event: " + curAlarm.event
+        let timeNotif = " Time:  " + curAlarm.time
+        let moodNotif = " Mood: " + curAlarm.mood
         timeField.setText(timeNotif)
         eventField.setText(eventNotif)
         moodField.setText(moodNotif)

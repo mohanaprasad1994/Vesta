@@ -34,7 +34,7 @@ class InterfaceController: WKInterfaceController {
                 print(aResult)
                 print("SHORT ASR COMPLETED")
                 
-                InterfaceController.parseSpeech(str: aResult!)
+                InterfaceController.parseSpeechAlarm(str: aResult!)
                 
                 WKInterfaceController.reloadRootControllers(withNames: ["alarm"], contexts: nil)
                 //DispatchQueue.main.asynchronously() {
@@ -46,7 +46,7 @@ class InterfaceController: WKInterfaceController {
         
     }
     
-    class func parseSpeech(str:String){
+    class func parseSpeechAlarm(str:String){
         let strArr = str.characters.split{$0 == " "}.map(String.init)
         for (idx, elem) in strArr.enumerated() {
             if elem == "PM" || elem == "AM"{
@@ -69,6 +69,7 @@ class InterfaceController: WKInterfaceController {
         }
         
     }
+
     
     @IBAction func info() {
         presentController(withName: "info", context: nil)
