@@ -261,7 +261,7 @@
                             </items>
                         </group>
                         <button width="1" alignment="center" verticalAlignment="bottom" title="Start" id="McP-R9-88t">
-                            <color key="backgroundColor" red="0.23921568627450981" green="0.84705882352941175" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="backgroundColor" red="0.078431372549019607" green="0.63137254901960782" blue="0.93725490196078431" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <segue destination="uuh-es-FXd" kind="push" id="eWE-95-jca"/>
                             </connections>
@@ -344,7 +344,7 @@
                                         </group>
                                     </items>
                                 </group>
-                                <button width="0.5" height="0.25" alignment="center" verticalAlignment="bottom" backgroundImage="smalllogo" id="vei-do-efJ">
+                                <button width="1" alignment="center" verticalAlignment="bottom" title="Done" id="vei-do-efJ">
                                     <connections>
                                         <segue destination="AgC-eL-Hgc" kind="push" id="aYf-W5-RKf"/>
                                     </connections>
