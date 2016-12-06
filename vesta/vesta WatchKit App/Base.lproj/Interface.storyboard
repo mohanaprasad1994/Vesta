@@ -154,7 +154,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-80" y="0.0"/>
+            <point key="canvasLocation" x="-8" y="19"/>
         </scene>
         <!--alarm-->
         <scene sceneID="0Yu-DQ-zzS">
@@ -376,11 +376,11 @@
                         <label alignment="center" text="You seem to be" id="6Bl-h1-qWy">
                             <fontDescription key="font" type="system" pointSize="16"/>
                         </label>
-                        <button width="1" alignment="left" title="Happy" id="us8-eC-BGk">
+                        <picker height="36" alignment="left" focusStyle="stack" id="RFg-qA-qNa">
                             <connections>
-                                <action selector="editMood" destination="4b6-2B-y6b" id="TEI-C4-ksU"/>
+                                <action selector="moodSelect:" destination="4b6-2B-y6b" id="DZ8-5m-Sg6"/>
                             </connections>
-                        </button>
+                        </picker>
                         <button width="62" height="62" alignment="center" backgroundImage="happy" id="1nX-jR-6kP">
                             <connections>
                                 <segue destination="RDD-ii-InN" kind="push" id="BR4-Hz-w1x"/>
@@ -390,11 +390,11 @@
                     </items>
                     <connections>
                         <outlet property="emojiField" destination="1nX-jR-6kP" id="xH7-h0-ggG"/>
-                        <outlet property="moodSugField" destination="us8-eC-BGk" id="ZEP-5i-3Cs"/>
+                        <outlet property="moodPicker" destination="RFg-qA-qNa" id="7cT-RM-4BL"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="-130" y="424"/>
+            <point key="canvasLocation" x="-220" y="382"/>
         </scene>
         <!--Import-->
         <scene sceneID="TzJ-cT-E1Y">
