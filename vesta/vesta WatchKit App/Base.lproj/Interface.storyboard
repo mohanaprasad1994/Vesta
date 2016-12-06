@@ -382,7 +382,7 @@
                                 <segue destination="RDD-ii-InN" kind="push" id="BR4-Hz-w1x"/>
                             </connections>
                         </button>
-                        <label alignment="left" text="Tap to play music!" id="zDj-KS-eCo"/>
+                        <label alignment="center" text="Tap to play music!" id="zDj-KS-eCo"/>
                     </items>
                 </controller>
             </objects>
