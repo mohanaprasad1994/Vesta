@@ -123,7 +123,12 @@
                         </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Music" id="YDe-mP-ulD">
                             <connections>
-                                <segue destination="RDD-ii-InN" kind="push" id="kS4-ZH-Y6q"/>
+                                <segue destination="4b6-2B-y6b" kind="push" id="oZZ-gL-R1d"/>
+                            </connections>
+                        </button>
+                        <button width="23" height="23" alignment="left" backgroundImage="settings" id="Yky-hZ-pJc">
+                            <connections>
+                                <segue destination="omR-kK-DYT" kind="push" id="3vc-3h-o70"/>
                             </connections>
                         </button>
                     </items>
@@ -236,7 +241,7 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="207" y="997"/>
+            <point key="canvasLocation" x="152" y="1254"/>
         </scene>
         <!--MuTimer Setup-->
         <scene sceneID="Pxf-AC-Tde">
@@ -361,10 +366,57 @@
             <objects>
                 <controller id="4sK-HA-Art" customClass="NotificationController" customModule="vesta_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="463" y="997"/>
+            <point key="canvasLocation" x="480" y="1243"/>
+        </scene>
+        <!--Mood-->
+        <scene sceneID="8e9-Rz-No4">
+            <objects>
+                <controller identifier="Mood" id="4b6-2B-y6b">
+                    <items>
+                        <label alignment="center" text="You seem to be" id="6Bl-h1-qWy">
+                            <fontDescription key="font" type="system" pointSize="16"/>
+                        </label>
+                        <button width="1" alignment="left" title="Happy" id="us8-eC-BGk"/>
+                        <button width="62" height="62" alignment="center" backgroundImage="happy" id="1nX-jR-6kP">
+                            <connections>
+                                <segue destination="RDD-ii-InN" kind="push" id="BR4-Hz-w1x"/>
+                            </connections>
+                        </button>
+                        <label alignment="left" text="Tap to play music!" id="zDj-KS-eCo"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-130" y="424"/>
+        </scene>
+        <!--Import-->
+        <scene sceneID="TzJ-cT-E1Y">
+            <objects>
+                <controller identifier="Import" id="omR-kK-DYT">
+                    <items>
+                        <label alignment="center" text="Import Music" id="HCx-Bw-LXc"/>
+                        <group width="1" alignment="center" id="5MR-yQ-ayn">
+                            <items>
+                                <button width="40" height="46" alignment="left" backgroundImage="apple-logo" id="4hv-rd-jbA"/>
+                                <label alignment="center" verticalAlignment="center" text="Apple Music" id="sEi-NN-Qms">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                        <group width="1" alignment="center" id="FOt-8A-Iz8">
+                            <items>
+                                <button width="43" height="43" alignment="left" verticalAlignment="bottom" backgroundImage="spotify-logo" id="G87-P4-XPM"/>
+                                <label alignment="center" verticalAlignment="center" text="Spotify" id="QRD-Og-2se">
+                                    <fontDescription key="font" type="system" pointSize="13"/>
+                                </label>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-8" y="750"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="kS4-ZH-Y6q"/>
+        <segue reference="BR4-Hz-w1x"/>
     </inferredMetricsTieBreakers>
 </document>
