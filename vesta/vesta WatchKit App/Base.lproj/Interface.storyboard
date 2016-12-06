@@ -371,12 +371,16 @@
         <!--Mood-->
         <scene sceneID="8e9-Rz-No4">
             <objects>
-                <controller identifier="Mood" id="4b6-2B-y6b">
+                <controller identifier="Mood" id="4b6-2B-y6b" customClass="MoodInterfaceController" customModule="vesta_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="You seem to be" id="6Bl-h1-qWy">
                             <fontDescription key="font" type="system" pointSize="16"/>
                         </label>
-                        <button width="1" alignment="left" title="Happy" id="us8-eC-BGk"/>
+                        <button width="1" alignment="left" title="Happy" id="us8-eC-BGk">
+                            <connections>
+                                <action selector="editMood" destination="4b6-2B-y6b" id="TEI-C4-ksU"/>
+                            </connections>
+                        </button>
                         <button width="62" height="62" alignment="center" backgroundImage="happy" id="1nX-jR-6kP">
                             <connections>
                                 <segue destination="RDD-ii-InN" kind="push" id="BR4-Hz-w1x"/>
@@ -384,6 +388,10 @@
                         </button>
                         <label alignment="center" text="Tap to play music!" id="zDj-KS-eCo"/>
                     </items>
+                    <connections>
+                        <outlet property="emojiField" destination="1nX-jR-6kP" id="xH7-h0-ggG"/>
+                        <outlet property="moodSugField" destination="us8-eC-BGk" id="ZEP-5i-3Cs"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="-130" y="424"/>

@@ -46,6 +46,7 @@
 		BD3910F21DE2B26E0066F7B4 /* listen.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3910F11DE2B26E0066F7B4 /* listen.png */; };
 		BD3910F51DE2B8990066F7B4 /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3910F41DE2B8990066F7B4 /* check.png */; };
 		BD3910F71DE2B8A10066F7B4 /* cross.png in Resources */ = {isa = PBXBuildFile; fileRef = BD3910F61DE2B8A10066F7B4 /* cross.png */; };
+		BD820D4A1DF74E2C00D2DC10 /* MoodInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD820D491DF74E2C00D2DC10 /* MoodInterfaceController.swift */; };
 		BD84C0B61DF2484700AE5139 /* CalendarInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD84C0B51DF2484700AE5139 /* CalendarInterfaceController.swift */; };
 		BD84C0B81DF4D2A800AE5139 /* electricity.png in Resources */ = {isa = PBXBuildFile; fileRef = BD84C0B71DF4D2A800AE5139 /* electricity.png */; };
 		BD84C0BC1DF68C2200AE5139 /* love.png in Resources */ = {isa = PBXBuildFile; fileRef = BD84C0BB1DF68C2200AE5139 /* love.png */; };
@@ -142,6 +143,7 @@
 		BD3910F11DE2B26E0066F7B4 /* listen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = listen.png; path = Assets.xcassets/listen.png; sourceTree = "<group>"; };
 		BD3910F41DE2B8990066F7B4 /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = check.png; path = Assets.xcassets/check.png; sourceTree = "<group>"; };
 		BD3910F61DE2B8A10066F7B4 /* cross.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cross.png; path = Assets.xcassets/cross.png; sourceTree = "<group>"; };
+		BD820D491DF74E2C00D2DC10 /* MoodInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoodInterfaceController.swift; sourceTree = "<group>"; };
 		BD84C0B51DF2484700AE5139 /* CalendarInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarInterfaceController.swift; sourceTree = "<group>"; };
 		BD84C0B71DF4D2A800AE5139 /* electricity.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = electricity.png; path = Assets.xcassets/electricity.png; sourceTree = "<group>"; };
 		BD84C0BB1DF68C2200AE5139 /* love.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love.png; path = Assets.xcassets/love.png; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */,
 				BD0BE4B31DE54938000EB0A5 /* AlarmNotificationInterfaceController.swift */,
 				BD84C0B51DF2484700AE5139 /* CalendarInterfaceController.swift */,
+				BD820D491DF74E2C00D2DC10 /* MoodInterfaceController.swift */,
 			);
 			path = "vesta WatchKit Extension";
 			sourceTree = "<group>";
@@ -463,6 +466,7 @@
 				BD3910DE1DE298010066F7B4 /* NotificationController.swift in Sources */,
 				BD84C0B61DF2484700AE5139 /* CalendarInterfaceController.swift in Sources */,
 				BD3910DC1DE298010066F7B4 /* ExtensionDelegate.swift in Sources */,
+				BD820D4A1DF74E2C00D2DC10 /* MoodInterfaceController.swift in Sources */,
 				BD3910DA1DE298010066F7B4 /* InterfaceController.swift in Sources */,
 				BD0BE4B41DE54938000EB0A5 /* AlarmNotificationInterfaceController.swift in Sources */,
 				BD1EA85F1DE2F7470030D8A5 /* MusicInterfaceController.swift in Sources */,

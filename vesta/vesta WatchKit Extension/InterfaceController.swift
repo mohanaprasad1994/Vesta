@@ -34,9 +34,14 @@ class InterfaceController: WKInterfaceController {
                 print(aResult)
                 print("SHORT ASR COMPLETED")
                 
+                if InterfaceController.parseSpeechMusic(str: aResult!){
+                    self.pushController(withName: "music", context: nil)
+                }
+                else{
                 InterfaceController.parseSpeechAlarm(str: aResult!)
                 
-                WKInterfaceController.reloadRootControllers(withNames: ["alarm"], contexts: nil)
+                    WKInterfaceController.reloadRootControllers(withNames: ["alarm"], contexts: nil)
+                }
                 //DispatchQueue.main.asynchronously() {
                 // Update UI
                 //}
@@ -44,6 +49,19 @@ class InterfaceController: WKInterfaceController {
         })//end show voice menu
         
         
+    }
+    
+    class func parseSpeechMusic(str:String) -> Bool{
+        let strArr = str.characters.split{$0 == " "}.map(String.init)
+        for (_, elem) in strArr.enumerated() {
+            let elem_lo = elem.lowercased()
+            if elem_lo == "music" || elem_lo == "song" || elem_lo == "songs"{
+                return true
+            }
+            
+        }
+        return false
+
     }
     
     class func parseSpeechAlarm(str:String){
