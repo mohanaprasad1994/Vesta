@@ -51,6 +51,9 @@
 		BD84C0BC1DF68C2200AE5139 /* love.png in Resources */ = {isa = PBXBuildFile; fileRef = BD84C0BB1DF68C2200AE5139 /* love.png */; };
 		BDAEF8361DE37F3600357834 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BDAEF8351DE37F3600357834 /* pause.png */; };
 		BDAEF83A1DE3B69500357834 /* AlarmInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */; };
+		F2518C811DF6DD09000ADEE2 /* TimerRunInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2518C801DF6DD09000ADEE2 /* TimerRunInterfaceController.swift */; };
+		F2518C831DF6DD5A000ADEE2 /* TimerSetupInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2518C821DF6DD5A000ADEE2 /* TimerSetupInterfaceController.swift */; };
+		F2518C851DF6DDD3000ADEE2 /* EnergyScoreInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2518C841DF6DDD3000ADEE2 /* EnergyScoreInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +150,9 @@
 		BD84C0BB1DF68C2200AE5139 /* love.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love.png; path = Assets.xcassets/love.png; sourceTree = "<group>"; };
 		BDAEF8351DE37F3600357834 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Assets.xcassets/pause.png; sourceTree = "<group>"; };
 		BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInterfaceController.swift; sourceTree = "<group>"; };
+		F2518C801DF6DD09000ADEE2 /* TimerRunInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerRunInterfaceController.swift; sourceTree = "<group>"; };
+		F2518C821DF6DD5A000ADEE2 /* TimerSetupInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerSetupInterfaceController.swift; sourceTree = "<group>"; };
+		F2518C841DF6DDD3000ADEE2 /* EnergyScoreInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EnergyScoreInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +176,7 @@
 		BD1EA8531DE2DCD30030D8A5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD3910D61DE298010066F7B4 /* vesta WatchKit Extension */,
 				BD1EA8541DE2DCD30030D8A5 /* AVFoundation.framework */,
 			);
 			name = Frameworks;
@@ -180,7 +187,6 @@
 			children = (
 				BD3910B31DE298010066F7B4 /* vesta */,
 				BD3910C71DE298010066F7B4 /* vesta WatchKit App */,
-				BD3910D61DE298010066F7B4 /* vesta WatchKit Extension */,
 				BD3910B21DE298010066F7B4 /* Products */,
 				BD1EA8531DE2DCD30030D8A5 /* Frameworks */,
 			);
@@ -236,6 +242,9 @@
 				BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */,
 				BD0BE4B31DE54938000EB0A5 /* AlarmNotificationInterfaceController.swift */,
 				BD84C0B51DF2484700AE5139 /* CalendarInterfaceController.swift */,
+				F2518C821DF6DD5A000ADEE2 /* TimerSetupInterfaceController.swift */,
+				F2518C801DF6DD09000ADEE2 /* TimerRunInterfaceController.swift */,
+				F2518C841DF6DDD3000ADEE2 /* EnergyScoreInterfaceController.swift */,
 			);
 			path = "vesta WatchKit Extension";
 			sourceTree = "<group>";
@@ -451,6 +460,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD3910B71DE298010066F7B4 /* ViewController.swift in Sources */,
+				F2518C811DF6DD09000ADEE2 /* TimerRunInterfaceController.swift in Sources */,
+				F2518C851DF6DDD3000ADEE2 /* EnergyScoreInterfaceController.swift in Sources */,
+				F2518C831DF6DD5A000ADEE2 /* TimerSetupInterfaceController.swift in Sources */,
 				BD3910B51DE298010066F7B4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

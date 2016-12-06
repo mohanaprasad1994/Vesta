@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -116,14 +116,14 @@
                                 <segue destination="qHQ-wf-HT1" kind="push" id="Ruh-e0-rtM"/>
                             </connections>
                         </button>
-                        <button width="1" alignment="left" verticalAlignment="bottom" title="Timer" id="BBA-ST-9UQ">
-                            <connections>
-                                <segue destination="srH-X7-X1C" kind="push" id="FxP-kD-de2"/>
-                            </connections>
-                        </button>
                         <button width="1" alignment="left" verticalAlignment="bottom" title="Music" id="YDe-mP-ulD">
                             <connections>
                                 <segue destination="4b6-2B-y6b" kind="push" id="oZZ-gL-R1d"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" verticalAlignment="bottom" title="Chore Timer" id="BBA-ST-9UQ">
+                            <connections>
+                                <segue destination="srH-X7-X1C" kind="push" id="FxP-kD-de2"/>
                             </connections>
                         </button>
                         <button width="23" height="23" alignment="left" backgroundImage="settings" id="Yky-hZ-pJc">
@@ -349,7 +349,7 @@
                                         </group>
                                     </items>
                                 </group>
-                                <button width="1" alignment="center" verticalAlignment="bottom" title="Done" id="vei-do-efJ">
+                                <button width="1" alignment="center" verticalAlignment="bottom" title="Done!" id="vei-do-efJ">
                                     <connections>
                                         <segue destination="AgC-eL-Hgc" kind="push" id="aYf-W5-RKf"/>
                                     </connections>
