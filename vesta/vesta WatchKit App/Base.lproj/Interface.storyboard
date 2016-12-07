@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="15G1004" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch38" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -243,16 +243,20 @@
             </objects>
             <point key="canvasLocation" x="152" y="1254"/>
         </scene>
-        <!--MuTimer Setup-->
+        <!--TimerSetup-->
         <scene sceneID="Pxf-AC-Tde">
             <objects>
-                <controller identifier="MuTimer Setup" id="srH-X7-X1C">
+                <controller identifier="TimerSetup" id="srH-X7-X1C" customClass="TimerSetupInterfaceController" customModule="vesta_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="MUSIC TIMER" id="KKx-47-8pM"/>
                         <group width="1" alignment="left" id="AyZ-Px-Up5">
                             <items>
                                 <imageView width="50" height="52" alignment="left" image="music" contentMode="scaleAspectFit" id="gUW-v9-rKH"/>
-                                <picker width="0.20000000000000001" height="0.69999999999999996" alignment="right" verticalAlignment="center" id="PFM-7z-j0X"/>
+                                <picker width="0.20000000000000001" height="0.69999999999999996" alignment="right" verticalAlignment="center" indicatorMode="shownWhileFocused" id="PFM-7z-j0X">
+                                    <connections>
+                                        <action selector="pickVal:" destination="srH-X7-X1C" id="Aax-MC-iq5"/>
+                                    </connections>
+                                </picker>
                                 <label alignment="right" verticalAlignment="center" text="songs" id="WyB-Ye-Tj2"/>
                             </items>
                         </group>
@@ -261,7 +265,7 @@
                         </label>
                         <group width="1" alignment="left" id="2Zc-OV-9oS">
                             <items>
-                                <label alignment="center" verticalAlignment="center" text="20" id="aF1-95-1h7"/>
+                                <label alignment="center" verticalAlignment="center" text="3.5" id="aF1-95-1h7"/>
                                 <label alignment="center" verticalAlignment="center" text="min" id="C3a-vE-Xz0"/>
                             </items>
                         </group>
@@ -272,6 +276,10 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="Timer" destination="aF1-95-1h7" id="Gj7-jm-mdq"/>
+                        <outlet property="listPicker" destination="PFM-7z-j0X" id="Thi-e5-LxD"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="320" y="744"/>

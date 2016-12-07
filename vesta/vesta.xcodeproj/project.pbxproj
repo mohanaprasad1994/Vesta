@@ -52,6 +52,7 @@
 		BD84C0BC1DF68C2200AE5139 /* love.png in Resources */ = {isa = PBXBuildFile; fileRef = BD84C0BB1DF68C2200AE5139 /* love.png */; };
 		BDAEF8361DE37F3600357834 /* pause.png in Resources */ = {isa = PBXBuildFile; fileRef = BDAEF8351DE37F3600357834 /* pause.png */; };
 		BDAEF83A1DE3B69500357834 /* AlarmInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */; };
+		F2518C871DF775DC000ADEE2 /* TimerSetupInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2518C861DF775DC000ADEE2 /* TimerSetupInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +150,7 @@
 		BD84C0BB1DF68C2200AE5139 /* love.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = love.png; path = Assets.xcassets/love.png; sourceTree = "<group>"; };
 		BDAEF8351DE37F3600357834 /* pause.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pause.png; path = Assets.xcassets/pause.png; sourceTree = "<group>"; };
 		BDAEF8391DE3B69500357834 /* AlarmInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlarmInterfaceController.swift; sourceTree = "<group>"; };
+		F2518C861DF775DC000ADEE2 /* TimerSetupInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimerSetupInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -239,6 +241,7 @@
 				BD0BE4B31DE54938000EB0A5 /* AlarmNotificationInterfaceController.swift */,
 				BD84C0B51DF2484700AE5139 /* CalendarInterfaceController.swift */,
 				BD820D491DF74E2C00D2DC10 /* MoodInterfaceController.swift */,
+				F2518C861DF775DC000ADEE2 /* TimerSetupInterfaceController.swift */,
 			);
 			path = "vesta WatchKit Extension";
 			sourceTree = "<group>";
@@ -465,6 +468,7 @@
 				BDAEF83A1DE3B69500357834 /* AlarmInterfaceController.swift in Sources */,
 				BD3910DE1DE298010066F7B4 /* NotificationController.swift in Sources */,
 				BD84C0B61DF2484700AE5139 /* CalendarInterfaceController.swift in Sources */,
+				F2518C871DF775DC000ADEE2 /* TimerSetupInterfaceController.swift in Sources */,
 				BD3910DC1DE298010066F7B4 /* ExtensionDelegate.swift in Sources */,
 				BD820D4A1DF74E2C00D2DC10 /* MoodInterfaceController.swift in Sources */,
 				BD3910DA1DE298010066F7B4 /* InterfaceController.swift in Sources */,
