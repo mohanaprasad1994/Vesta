@@ -11,7 +11,7 @@ import Foundation
 
 
 var alarm = false
-var intervalTimer = Timer()
+//var intervalTimer = Timer()
 var time = "10:00AM"
 var event = "Wake Up"
 var mood = "Happy"
@@ -26,6 +26,8 @@ var curAlarm = Alarm(time:time, event:event, mood:mood)
 
 class InterfaceController: WKInterfaceController {
 
+    var alarmTimer = Timer()
+    
     @IBAction func speechRecog() {
         self.presentTextInputController(withSuggestions: [], allowedInputMode: WKTextInputMode.plain, completion:{
             (results) -> Void in
@@ -101,8 +103,8 @@ class InterfaceController: WKInterfaceController {
         if alarm{
         //timer for notification
             let interval:TimeInterval = 5.0
-            if intervalTimer.isValid{intervalTimer.invalidate()} //shut off timer if on
-            intervalTimer = Timer.scheduledTimer(timeInterval: interval ,
+            if alarmTimer.isValid{alarmTimer.invalidate()} //shut off timer if on
+            alarmTimer = Timer.scheduledTimer(timeInterval: interval ,
                                              target: self,  //Object to target when done
             selector: #selector(self.timerDidEnd(timer:)), //Method on the object
             userInfo: nil, //Extra user info, most likely a dictionary
@@ -122,8 +124,13 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
         
-        player.pause()
-        player2.pause()
+        musicPlayer.removeAllItems()
+        playerItem = WKAudioFilePlayerItem(asset: asset)
+        playerItem2 = WKAudioFilePlayerItem(asset: asset2)
+        musicPlayer.appendItem(playerItem)
+        musicPlayer.appendItem(playerItem2)
+        musicPlayer.pause()
+        
         playing = false
     }
     

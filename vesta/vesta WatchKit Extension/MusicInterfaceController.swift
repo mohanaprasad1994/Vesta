@@ -16,14 +16,16 @@ var song = 1
 let filePath = Bundle.main.path(forResource: "song", ofType: "mp3")!
 let fileUrl = NSURL.fileURL(withPath: filePath)
 let asset = WKAudioFileAsset(url: fileUrl)
-let playerItem = WKAudioFilePlayerItem(asset: asset)
-let player = WKAudioFilePlayer(playerItem: playerItem)
+var playerItem = WKAudioFilePlayerItem(asset: asset)
+//let player = WKAudioFilePlayer(playerItem: playerItem)
 
 let filePath2 = Bundle.main.path(forResource: "song2", ofType: "mp3")!
 let fileUrl2 = NSURL.fileURL(withPath: filePath2)
 let asset2 = WKAudioFileAsset(url: fileUrl2)
-let playerItem2 = WKAudioFilePlayerItem(asset: asset2)
-let player2 = WKAudioFilePlayer(playerItem: playerItem2)
+var playerItem2 = WKAudioFilePlayerItem(asset: asset2)
+//let player2 = WKAudioFilePlayer(playerItem: playerItem2)
+
+var musicPlayer = WKAudioFileQueuePlayer(items: [playerItem,playerItem2])
 
 class MusicInterfaceController: WKInterfaceController {
     
@@ -37,16 +39,22 @@ class MusicInterfaceController: WKInterfaceController {
     @IBAction func switchSong() {
         if song == 1{
             song = 2
-            player.pause()
-            player2.play()
+            musicPlayer.advanceToNextItem()
+            musicPlayer.removeItem(playerItem)
+            playerItem = WKAudioFilePlayerItem(asset: asset)
+            musicPlayer.appendItem(playerItem)
+            
             playing = true
             songInfo.setText("Monsters")
             artist.setText("Timeflies ft Katie Sky")
         }
         else{
             song = 1
-            player2.pause()
-            player.play()
+            musicPlayer.advanceToNextItem()
+            musicPlayer.removeItem(playerItem2)
+            playerItem2 = WKAudioFilePlayerItem(asset: asset2)
+            musicPlayer.appendItem(playerItem2)
+            
             playing = true
             songInfo.setText("Uptown Funk")
             artist.setText("Mark Ronson ft Bruno Mars")
@@ -57,23 +65,14 @@ class MusicInterfaceController: WKInterfaceController {
     @IBAction func play() {
         if !playing{
             playButton.setBackgroundImageNamed("pause.png")
-            if song == 1{
-               player.play()
-            }
-            else{
-               player2.play()
-            }
+            musicPlayer.play()
             
             playing = true
         }
         else{
             playButton.setBackgroundImageNamed("play.png")
-            if song == 1{
-                player.pause()
-            }
-            else{
-                player2.pause()
-            }
+            musicPlayer.pause()
+            
             playing = false
         }
         

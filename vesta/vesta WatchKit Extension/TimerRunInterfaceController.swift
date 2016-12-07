@@ -17,6 +17,17 @@ class TimerRunInterfaceController: WKInterfaceController {
     @IBOutlet var songsLeft: WKInterfaceLabel!
     @IBOutlet var songTimer: WKInterfaceTimer!
 
+    var choreTimer = Timer()
+    
+    @IBAction func stopTimer() {
+        choreTimer.invalidate()
+        WKInterfaceController.reloadRootControllers(withNames: ["Energy Score"], contexts: nil)
+    }
+    
+    func timerDone() {
+        WKInterfaceController.reloadRootControllers(withNames: ["Energy Score"], contexts: nil)
+        
+    }
 
     override func willActivate() {
         super.willActivate()
@@ -26,29 +37,18 @@ class TimerRunInterfaceController: WKInterfaceController {
         songTimer.setDate(newDateToUse as Date)
         songTimer.start()
         
-        var playing = false
+        if choreTimer.isValid{choreTimer.invalidate()}
+        choreTimer = Timer.scheduledTimer(timeInterval: timeToAdd, target: self, selector: (#selector(TimerRunInterfaceController.timerDone)), userInfo: nil, repeats: false)
         
-        while playing == false {
-            if song == 1 {
-                song = 2
-                player.pause()
-                player2.play()
-                playing = true
-            }
-            else {
-                song = 1
-                player2.pause()
-                player.play()
-                playing = true
-            }
+        musicPlayer.play()
+        playing = true
+        
         }
-    }
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
-        player.pause()
-        player2.pause()
+        musicPlayer.pause()
         playing = false
     }
     

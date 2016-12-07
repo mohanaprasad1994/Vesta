@@ -30,12 +30,7 @@ class AlarmNotificationInterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        if song == 1{
-            player.play()
-        }
-        else{
-            player2.play()
-        }
+        musicPlayer.play()
         playing = true
         
         let eventNotif = " Event: " + curAlarm.event

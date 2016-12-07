@@ -48,6 +48,9 @@ class MoodInterfaceController: WKInterfaceController {
         }
         moodPicker.setItems(pickerItems)
         moodPicker.focus()
+        
+        musicPlayer.pause()
+        playing = false
     }
 
     override func didDeactivate() {
