@@ -243,10 +243,10 @@
             </objects>
             <point key="canvasLocation" x="152" y="1254"/>
         </scene>
-        <!--TimerSetup-->
+        <!--Timer Setup-->
         <scene sceneID="Pxf-AC-Tde">
             <objects>
-                <controller identifier="TimerSetup" id="srH-X7-X1C" customClass="TimerSetupInterfaceController" customModule="vesta_WatchKit_Extension">
+                <controller identifier="Timer Setup" id="srH-X7-X1C" customClass="TimerSetupInterfaceController" customModule="vesta_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="MUSIC TIMER" id="KKx-47-8pM"/>
                         <group width="1" alignment="left" id="AyZ-Px-Up5">
@@ -284,10 +284,10 @@
             </objects>
             <point key="canvasLocation" x="320" y="744"/>
         </scene>
-        <!--MuTimer Run-->
+        <!--Timer Run-->
         <scene sceneID="oIT-TI-9gy">
             <objects>
-                <controller identifier="MuTimer Run" id="uuh-es-FXd">
+                <controller identifier="Timer Run" id="uuh-es-FXd" customClass="TimerRunInterfaceController" customModule="vesta_WatchKit_Extension">
                     <items>
                         <label alignment="center" text="MUSIC TIMER" id="8I6-Tk-ho0"/>
                         <group width="1" alignment="left" id="c2i-PL-4Xi">
@@ -302,7 +302,9 @@
                         </label>
                         <group width="1" alignment="left" id="rTp-aI-CbG">
                             <items>
-                                <label alignment="center" verticalAlignment="center" text="20" id="ADP-Ma-2Cf"/>
+                                <timer alignment="center" previewedSeconds="210" id="hMu-70-klz">
+                                    <calendarUnit key="units" minute="YES" second="YES"/>
+                                </timer>
                                 <label alignment="center" verticalAlignment="center" text="min" id="yrq-qC-euj"/>
                             </items>
                         </group>
@@ -313,6 +315,10 @@
                             </connections>
                         </button>
                     </items>
+                    <connections>
+                        <outlet property="songTimer" destination="hMu-70-klz" id="iQw-OP-Cum"/>
+                        <outlet property="songsLeft" destination="FGg-aJ-m4y" id="hsa-DB-aXL"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="590" y="745"/>
