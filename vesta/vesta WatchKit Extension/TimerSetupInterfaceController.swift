@@ -30,6 +30,9 @@ class TimerSetupInterfaceController: WKInterfaceController {
         }
         listPicker.setItems(pickerItems)
         listPicker.focus()
+        
+        chosen = 1
+        choreTimer.invalidate()
     }
     
     

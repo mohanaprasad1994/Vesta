@@ -9,6 +9,7 @@
 import Foundation
 import WatchKit
 
+var choreTimer = Timer()
 
 class TimerRunInterfaceController: WKInterfaceController {
     
@@ -17,7 +18,7 @@ class TimerRunInterfaceController: WKInterfaceController {
     @IBOutlet var songsLeft: WKInterfaceLabel!
     @IBOutlet var songTimer: WKInterfaceTimer!
 
-    var choreTimer = Timer()
+    let songTime = 210.0
     
     @IBAction func stopTimer() {
         choreTimer.invalidate()
@@ -29,13 +30,18 @@ class TimerRunInterfaceController: WKInterfaceController {
         
     }
 
+    override func awake(withContext context: Any?) {
+        super.awake(withContext: context)
+        // Configure interface objects here.
+    }
     override func willActivate() {
         super.willActivate()
         songsLeft.setText(String(chosen))
-        let timeToAdd: TimeInterval = Double(chosen) * 210
+        let timeToAdd: TimeInterval = Double(chosen) * songTime
         let newDateToUse = NSDate().addingTimeInterval(timeToAdd)
         songTimer.setDate(newDateToUse as Date)
         songTimer.start()
+        
         
         if choreTimer.isValid{choreTimer.invalidate()}
         choreTimer = Timer.scheduledTimer(timeInterval: timeToAdd, target: self, selector: (#selector(TimerRunInterfaceController.timerDone)), userInfo: nil, repeats: false)

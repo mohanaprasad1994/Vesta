@@ -30,8 +30,9 @@ class AlarmNotificationInterfaceController: WKInterfaceController {
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
-        musicPlayer.play()
-        playing = true
+        WKInterfaceDevice.current().play(WKHapticType.notification)
+        //musicPlayer.play()
+        //playing = true
         
         let eventNotif = " Event: " + curAlarm.event
         let timeNotif = " Time:  " + curAlarm.time

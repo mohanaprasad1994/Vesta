@@ -17,7 +17,7 @@ class EnergyInterfaceController: WKInterfaceController {
     }
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
-        
+        WKInterfaceDevice.current().play(WKHapticType.notification)
         // Configure interface objects here.
     }
 

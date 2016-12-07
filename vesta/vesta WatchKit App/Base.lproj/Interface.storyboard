@@ -83,7 +83,7 @@
                                         <action selector="alarmSet" destination="CHG-SC-6EJ" id="roO-w8-wvR"/>
                                     </connections>
                                 </button>
-                                <button width="50" height="50" alignment="right" verticalAlignment="bottom" title="Dismiss" backgroundImage="redcircle" id="64r-Wb-95I">
+                                <button width="50" height="50" alignment="right" verticalAlignment="bottom" title="Stop" backgroundImage="redcircle" id="64r-Wb-95I">
                                     <fontDescription key="font" type="boldSystem" pointSize="9"/>
                                     <connections>
                                         <action selector="alarmCancel" destination="CHG-SC-6EJ" id="ULt-I2-PiW"/>
@@ -208,11 +208,16 @@
             <objects>
                 <controller identifier="calendar" id="qHQ-wf-HT1" customClass="CalendarInterfaceController" customModule="vesta_WatchKit_Extension">
                     <items>
-                        <button width="35" height="35" alignment="right" backgroundImage="plus" id="dJo-av-f32">
-                            <connections>
-                                <action selector="addAlarm" destination="qHQ-wf-HT1" id="ZRd-M9-8N5"/>
-                            </connections>
-                        </button>
+                        <group width="1" alignment="left" id="zFl-qJ-JGA">
+                            <items>
+                                <label alignment="center" text="ALARM" id="aEJ-IN-XTL"/>
+                                <button width="35" height="35" alignment="right" backgroundImage="plus" id="dJo-av-f32">
+                                    <connections>
+                                        <action selector="addAlarm" destination="qHQ-wf-HT1" id="ZRd-M9-8N5"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
                         <button width="1" alignment="left" title="Date @10:00AM" backgroundImage="calendar" id="Ogg-tb-Xos">
                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
@@ -251,8 +256,8 @@
                         <label alignment="center" text="MUSIC TIMER" id="KKx-47-8pM"/>
                         <group width="1" alignment="left" id="AyZ-Px-Up5">
                             <items>
-                                <imageView width="50" height="52" alignment="left" image="music" contentMode="scaleAspectFit" id="gUW-v9-rKH"/>
-                                <picker width="0.20000000000000001" height="0.69999999999999996" alignment="right" verticalAlignment="center" indicatorMode="shownWhileFocused" id="PFM-7z-j0X">
+                                <imageView width="40" height="50" alignment="left" image="music" contentMode="scaleAspectFit" id="gUW-v9-rKH"/>
+                                <picker width="0.20000000000000001" height="0.69999999999999996" alignment="right" verticalAlignment="center" focusStyle="stack" indicatorMode="shownWhileFocused" id="PFM-7z-j0X">
                                     <connections>
                                         <action selector="pickVal:" destination="srH-X7-X1C" id="Aax-MC-iq5"/>
                                     </connections>
@@ -260,7 +265,7 @@
                                 <label alignment="right" verticalAlignment="center" text="songs" id="WyB-Ye-Tj2"/>
                             </items>
                         </group>
-                        <label alignment="center" text="EST. TIME" id="eSA-58-x8W">
+                        <label alignment="center" text="Est. Time" id="eSA-58-x8W">
                             <color key="textColor" red="0.055481267000000001" green="0.46749884520000001" blue="0.72115851679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <group width="1" alignment="left" id="2Zc-OV-9oS">
@@ -297,7 +302,7 @@
                                 <label alignment="right" verticalAlignment="center" text="songs left" id="XXY-Qg-Sim"/>
                             </items>
                         </group>
-                        <label alignment="center" text="TIME REMAINING" id="Y54-HU-f5m">
+                        <label alignment="center" text="Time Remaining" id="Y54-HU-f5m">
                             <color key="textColor" red="0.055481267000000001" green="0.46749884520000001" blue="0.72115851679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </label>
                         <group width="1" alignment="left" id="rTp-aI-CbG">
@@ -415,7 +420,7 @@
             <objects>
                 <controller identifier="Import" id="omR-kK-DYT">
                     <items>
-                        <label alignment="center" text="Import Music" id="HCx-Bw-LXc"/>
+                        <label alignment="center" text="IMPORT MUSIC" id="HCx-Bw-LXc"/>
                         <group width="1" alignment="center" id="5MR-yQ-ayn">
                             <items>
                                 <button width="40" height="46" alignment="left" backgroundImage="apple-logo" id="4hv-rd-jbA"/>
@@ -439,6 +444,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="BR4-Hz-w1x"/>
+        <segue reference="KmW-hc-qaz"/>
     </inferredMetricsTieBreakers>
 </document>
