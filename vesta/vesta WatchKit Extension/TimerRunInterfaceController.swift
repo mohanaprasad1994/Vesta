@@ -9,9 +9,11 @@
 import Foundation
 import WatchKit
 
+
 class TimerRunInterfaceController: WKInterfaceController {
     
 
+    
     @IBOutlet var songsLeft: WKInterfaceLabel!
     @IBOutlet var songTimer: WKInterfaceTimer!
 
@@ -23,12 +25,31 @@ class TimerRunInterfaceController: WKInterfaceController {
         let newDateToUse = NSDate().addingTimeInterval(timeToAdd)
         songTimer.setDate(newDateToUse as Date)
         songTimer.start()
+        
+        var playing = false
+        
+        while playing == false {
+            if song == 1 {
+                song = 2
+                player.pause()
+                player2.play()
+                playing = true
+            }
+            else {
+                song = 1
+                player2.pause()
+                player.play()
+                playing = true
+            }
+        }
     }
-
     
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        player.pause()
+        player2.pause()
+        playing = false
     }
     
 }

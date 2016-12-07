@@ -19,8 +19,7 @@ class TimerSetupInterfaceController: WKInterfaceController {
     
     var strList: [String] = [
         "1",
-        "2",
-        "3"]
+        "2"]
     
     override func willActivate() {
         super.willActivate()
