@@ -54,6 +54,13 @@ class TimerRunInterfaceController: WKInterfaceController {
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
+        
+        musicPlayer.removeAllItems()
+        playerItem = WKAudioFilePlayerItem(asset: asset)
+        playerItem2 = WKAudioFilePlayerItem(asset: asset2)
+        musicPlayer.appendItem(playerItem)
+        musicPlayer.appendItem(playerItem2)
+
         musicPlayer.pause()
         playing = false
     }
