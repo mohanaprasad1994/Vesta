@@ -150,7 +150,7 @@
             <objects>
                 <controller identifier="info" id="ANy-ki-7U4">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Speak to VESTA to set alarm, timer, or play mood-based music." numberOfLines="4" id="c8j-Ye-8BJ"/>
+                        <label alignment="center" verticalAlignment="center" text="Speak to VESTA to set alarm or play mood-based music." numberOfLines="4" id="c8j-Ye-8BJ"/>
                     </items>
                 </controller>
             </objects>
