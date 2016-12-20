@@ -360,17 +360,17 @@
 				TargetAttributes = {
 					BD3910B01DE298000066F7B4 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = AMB6K5V9TZ;
+						DevelopmentTeam = 8YJ2342CPM;
 						ProvisioningStyle = Automatic;
 					};
 					BD3910C21DE298010066F7B4 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = AMB6K5V9TZ;
+						DevelopmentTeam = 8YJ2342CPM;
 						ProvisioningStyle = Automatic;
 					};
 					BD3910D11DE298010066F7B4 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = AMB6K5V9TZ;
+						DevelopmentTeam = 8YJ2342CPM;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.Push = {
@@ -549,6 +549,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -599,6 +600,7 @@
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
@@ -625,10 +627,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = AMB6K5V9TZ;
+				DEVELOPMENT_TEAM = 8YJ2342CPM;
 				INFOPLIST_FILE = "vesta WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yinglanma.vesta.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Vesta;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -642,10 +644,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = AMB6K5V9TZ;
+				DEVELOPMENT_TEAM = 8YJ2342CPM;
 				INFOPLIST_FILE = "vesta WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yinglanma.vesta.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Vesta;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -660,10 +662,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AMB6K5V9TZ;
+				DEVELOPMENT_TEAM = 8YJ2342CPM;
 				IBSC_MODULE = vesta_WatchKit_Extension;
 				INFOPLIST_FILE = "vesta WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = yinglanma.vesta.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Vesta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -678,10 +680,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = AMB6K5V9TZ;
+				DEVELOPMENT_TEAM = 8YJ2342CPM;
 				IBSC_MODULE = vesta_WatchKit_Extension;
 				INFOPLIST_FILE = "vesta WatchKit App/Info.plist";
-				PRODUCT_BUNDLE_IDENTIFIER = yinglanma.vesta.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Vesta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -697,10 +699,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AMB6K5V9TZ;
+				DEVELOPMENT_TEAM = 8YJ2342CPM;
 				INFOPLIST_FILE = vesta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yinglanma.vesta;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Vesta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -712,10 +714,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = AMB6K5V9TZ;
+				DEVELOPMENT_TEAM = 8YJ2342CPM;
 				INFOPLIST_FILE = vesta/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yinglanma.vesta;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.stanford.cs147.Vesta;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
